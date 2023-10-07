@@ -10,7 +10,7 @@
   <a href="client-y.html">Go to Client Y</a>
   <a href="clickjacking.html">clickjacking test</a>
   <script>
-    fetch('http://localhost:3000/cors') // panggil API express
+    fetch('https://calm-teal-walrus-cap.cyclic.app/cors') // panggil API express
       .then(response => response.json())
       .then(data => document.getElementById('message').textContent = data.message)
       .catch(error => document.getElementById('message').textContent = error);

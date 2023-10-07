@@ -11,13 +11,13 @@
   <button id='update'>Update Data</button>
   <button id='delete'>Delete Data</button>
   <script>
-    fetch('http://localhost:3000/client-y')
+    fetch('https://calm-teal-walrus-cap.cyclic.app:3000/client-y')
       .then(response => response.json())
       .then(data => document.getElementById('message').textContent = data.message)
       .catch(error => document.getElementById('message').textContent = error);
 
     document.getElementById('post').addEventListener('click', function() {
-      fetch('http://localhost:3000/client-y', {
+      fetch('https://calm-teal-walrus-cap.cyclic.app:3000/client-y', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

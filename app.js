@@ -12,18 +12,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(helmet.frameguard({ action: 'deny' }))
 const GlobalcorsOptions = {
-  origin: ['http://localhost:7000', 'http://localhost:8000', 'http://localhost:5555'],
+  origin: ['https://calm-teal-walrus-cap.cyclic.app:7000', 'https://calm-teal-walrus-cap.cyclic.app:8000'],
 }
 const allowAllOptions = {
   origin: "*",
 }
 app.use(express.json());
 const ClientXoptions = {
-  origin: 'http://localhost:7000',
+  origin: 'https://calm-teal-walrus-cap.cyclic.app:7000',
   methods: ['GET', 'POST'],
 }
 const ClientYoptions = {
-  origin: 'http://localhost:8000',
+  origin: 'https://calm-teal-walrus-cap.cyclic.app:8000',
   methods: ['GET', 'POST','DELETE',"PUT"],
 
 }

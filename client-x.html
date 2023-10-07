@@ -9,13 +9,13 @@
   <button id='post'>Post Data</button>
   <button id='get'>Get Data</button>
   <script>
-    fetch('http://localhost:3000/client-x')
+    fetch('https://calm-teal-walrus-cap.cyclic.app:3000/client-x')
       .then(response => response.json())
       .then(data => document.getElementById('message').textContent = data.message)
       .catch(error => document.getElementById('message').textContent = error);
 
     document.getElementById('post').addEventListener('click', function() {
-      fetch('http://localhost:3000/client-x', {
+      fetch('https://calm-teal-walrus-cap.cyclic.app:3000/client-x', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
